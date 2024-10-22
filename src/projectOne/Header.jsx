@@ -63,19 +63,19 @@ export default function Header({ isVisible, setIsVisible }) {
                 <ul className=" text-[#232323] pb-[1.5rem] text-[1rem] font-Poppins text-center">
                 <div className=" ml-[2rem] my-[1rem]  w-[27px] h-[27px]"><img className="md:hidden w-[100%] cursor-pointer h-[100%]  flex" onClick={toggle} src={close}  /></div> 
                 <Link to="home" smooth={true} duration={2000} offset={-9380} > 
-                  <li className="cursor-pointer active:text-blue-600 mt-[0.5rem] ">Home</li>
+                  <li onClick={toggle}  className="cursor-pointer active:text-blue-600 mt-[0.5rem] ">Home</li>
                   </Link>
                   <Link to="services" smooth={true} duration={700} offset={-240} > 
-                   <li className="active:text-blue-600 mt-[0.5rem] cursor-pointer">Services</li>
+                   <li onClick={toggle}  className="active:text-blue-600 mt-[0.5rem] cursor-pointer">Services</li>
                    </Link>
                   <Link  to="projects" smooth={true} duration={900} offset={-220}  > 
-                    <li  className="active:text-blue-600 mt-[0.5rem] cursor-pointer">Projects</li>
+                    <li onClick={toggle}   className="active:text-blue-600 mt-[0.5rem] cursor-pointer">Projects</li>
                   </Link>
                   <Link  to="contact" smooth={true} duration={1000} offset={-360} > 
-           <li className=" active:text-blue-600 mt-[0.5rem] cursor-pointer">Contact Us</li>
+           <li onClick={toggle}  className=" active:text-blue-600 mt-[0.5rem] cursor-pointer">Contact Us</li>
            </Link>
           <Link  to="testimonial" smooth={true} duration={1200} offset={-240}> 
-          <li className=" active:text-blue-600 mt-[0.5rem] cursor-pointer">Testimonials</li>
+          <li onClick={toggle}   className=" active:text-blue-600 mt-[0.5rem] cursor-pointer">Testimonials</li>
           </Link>
        
           </ul>
