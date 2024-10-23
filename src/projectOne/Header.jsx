@@ -4,6 +4,7 @@ import logo from "../assets/Frame 64.jpg";
 import search from "../assets/iconamoon_search-light.jpg";
 import menu from "../assets/menu.png"
 import close from "../assets/close.png"
+import vector from "../assets/Vector.svg"
 
 export default function Header({ isVisible, setIsVisible }) {
   const toggle = () => {
@@ -14,7 +15,9 @@ export default function Header({ isVisible, setIsVisible }) {
 
     <>
    
-      <div className="font-poppins fixed z-10  bg-white justify-between py-[1rem] flex mt-[-4rem]  2xl:justify-around items-center w-full text-center ">
+      <div className="font-poppins fixed z-10  bg-white 
+      justify-between xl:py-[2rem] py-[1rem] flex mt-[-4rem]
+        3xl:justify-around items-center w-full text-center ">
         
      
         
@@ -23,24 +26,24 @@ export default function Header({ isVisible, setIsVisible }) {
         </div>
 
         <div>
-          <ul className=" md:flex hidden justify-center mr-[3rem] text-[#232323] text-[1rem] font-Poppins items-center text-center">
+          <ul className=" md:flex hidden lg:font-[500] justify-center mr-[3rem] text-[#232323] text-[1rem] font-Poppins items-center text-center">
           <Link to="home" smooth={true} duration={1500} offset={-80} > 
-          <li className=" active:text-blue-600 cursor-pointer">Home</li>
+          <li className=" underline underline-offset-4 decoration-2 active:text-blue-600 cursor-pointer">Home</li>
           </Link>  
         <Link  to="services" smooth={true} duration={700} offset={-80}  >  
-         <li className="md:pl-[1.2rem] active:text-blue-600 pl-[2.5rem] cursor-pointer">Services</li>   
+         <li className="md:pl-[1.2rem] active:text-blue-600 lg:ml-[1.7rem] cursor-pointer">Services <span> <img  className=" inline mb-[0.1rem] ml-[0.1rem] w-[13px] h-[13px] " src={vector}  />  </span></li>   
            </Link> 
            <Link  to="projects" smooth={true} duration={1000} offset={-50}  >  
-           <li className="md:pl-[1.2rem]  active:text-blue-600 pl-[2.5rem] cursor-pointer"> Projects</li>
+           <li className="md:pl-[1.2rem] inline  active:text-blue-600 lg:ml-[1.7rem] cursor-pointer"> Projects <span> <img  className=" mb-[0.1rem] inline ml-[0.1rem] w-[13px] h-[13px] " src={vector}  />  </span>  </li>
            </Link>
            <Link  to="contact" smooth={true} duration={1100} offset={-80} > 
-             <li className=" active:text-blue-600 md:pl-[1.2rem] pl-[2.5rem] cursor-pointer">Contact Us</li>
+             <li className=" active:text-blue-600 md:pl-[1.2rem] lg:ml-[1.7rem] cursor-pointer">Contact Us</li>
             </Link>
            <Link  to="testimonial" smooth={true} duration={1300} offset={-80} >
-            <li className="md:pl-[1.2rem]  active:text-blue-600 pl-[2.5rem] cursor-pointer"> Testimonials</li>
+            <li className="md:pl-[1.2rem]  active:text-blue-600 lg:ml-[1.7rem] cursor-pointer"> Testimonials</li>
             </Link>
         
-            <li className="md:pl-[1.2rem] pl-[2.5rem] cursor-pointer">
+            <li className="md:pl-[1.2rem] lg:ml-[1.7rem] cursor-pointer">
               <img className="w-[1.9rem] h-[1.9rem]" src={search} alt="search icon" />
             </li>
           </ul>
